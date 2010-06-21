@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "koala", "~> 0.7.3"
 
   # If you need to check in files that aren't .rb files, add them here
-  s.files        = Dir["{lib}/**/*.rb", "LICENSE", "README.rdoc"]
+  s.files        = Dir["{lib}/**/*.rb", "{lib}/**/*.tt", "LICENSE", "README.rdoc"]
   s.require_path = 'lib'
 
   # If you need an executable, add it here
