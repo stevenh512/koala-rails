@@ -1,6 +1,6 @@
 = koala-rails
 
-Description goes here.
+Installer and helpers for using Koala with Rails 3
 
 == Note on Patches/Pull Requests
 

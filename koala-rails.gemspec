@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Steven Hancock"]
   s.email       = ["stevenh512@gmail.com"]
   s.homepage    = "http://github.com/stevenh512/koala-rails"
-  s.summary     = "A new gem templates"
-  s.description = "You're definitely going to want to replace a lot of this"
+  s.summary     = "Installer and helpers for using Koala with Rails 3"
+  s.description = "Installer and helpers for using Koala with Rails 3"
 
   s.required_rubygems_version = ">= 1.3.6"
 
