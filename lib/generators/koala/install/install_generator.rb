@@ -9,6 +9,10 @@ module Koala
         template "config/facebook.yml.tt", "config/facebook.yml"
       end
 
+      def copy_initializer_file
+        template "config/initializers/koala.rb.tt", "config/initializers/koala.rb"
+      end
+
     end
   end
 end
