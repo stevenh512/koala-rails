@@ -1,10 +1,11 @@
 source "http://rubygems.org"
 
-# Will automatically pull in this gem and all its
-# dependencies specified in the gemspec
-gem "koala-rails", :path => File.expand_path("..", __FILE__)
+gem "koala", "~> 0.7.3"
 
 # These are development dependencies
-gem "rake"
-gem "rspec", "2.0.0.beta.12"
+group :development do
+  gem "rake"
+  gem "shoe", "~> 0.6.2"
+  gem "rspec", "~> 2.0.0.beta.12"
+end
 

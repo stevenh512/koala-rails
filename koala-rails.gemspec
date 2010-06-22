@@ -1,3 +1,4 @@
+require "bundler"
 require File.expand_path("../lib/koala-rails/version", __FILE__)
 
 Gem::Specification.new do |s|
@@ -16,7 +17,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "koala-rails"
 
   # If you have other dependencies, add them here
-  s.add_dependency "koala", "~> 0.7.3"
+  s.add_bundler_dependencies
 
   # If you need to check in files that aren't .rb files, add them here
   s.files        = Dir["{lib}/**/*.rb", "{lib}/**/*.tt", "LICENSE", "README.rdoc"]
