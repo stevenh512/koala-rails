@@ -28,5 +28,11 @@ Gem::Specification.new do |s|
 
   # If you have C extensions, uncomment this line
   # s.extensions = "ext/extconf.rb"
+
+  s.extra_rdoc_files = ["README.rdoc", "LICENSE"]
+
+  s.rdoc_options << "--title" << "koala-rails" <<
+                    "--main" << "README.rdoc" <<
+                    "--inline-source" << "--line-numbers"
 end
 
