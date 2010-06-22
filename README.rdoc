@@ -4,14 +4,14 @@ Installer and helpers for using {Koala}[http://github.com/arsduo/koala] with {Ra
 
 == Installation
 
-In your +Gemfile+
+In your Gemfile
   gem "koala-rails"
 
 From the command line
   bundle install
   rails g koala:install
 
-Edit +config/facebook.yml+ to reflect your Facebook application's ID and secret.
+Edit config/facebook.yml to reflect your Facebook application's ID and secret.
 
 == Using the Helpers
 
