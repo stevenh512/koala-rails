@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 module KoalaRails
   module Helpers
     def facebook_session

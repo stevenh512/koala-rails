@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 # config/initializers/koala.rb
 # Monkey-patch in Facebook config so Koala knows to
 # automatically use Facebook settings from here if none are given

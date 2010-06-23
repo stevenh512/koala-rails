@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 require "bundler"
 require File.expand_path("../lib/koala-rails/version", __FILE__)
 

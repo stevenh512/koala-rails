@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 require 'generators/koala'
 
 module Koala

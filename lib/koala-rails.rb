@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 require "koala-rails/helpers"
 
 ActiveSupport.on_load(:action_controller) do
