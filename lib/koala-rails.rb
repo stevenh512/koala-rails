@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+require "koala"
 require "koala-rails/helpers"
 require "action_controller"
 
