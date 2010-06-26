@@ -5,7 +5,6 @@ Installer and helpers for using {Koala}[http://github.com/arsduo/koala] with {Ra
 == Installation
 
 In your Gemfile
-  gem "koala"
   gem "koala-rails"
 
 From the command line
