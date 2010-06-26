@@ -7,4 +7,3 @@ test:
 production:
   app_id: YOUR APP ID
   secret: YOUR SECRET
-

@@ -28,4 +28,3 @@ Edit config/facebook.yml to reflect your Facebook application's ID and secret.
 == Copyright
 
 Copyright (c) 2010 Steven Hancock. See LICENSE for details.
-

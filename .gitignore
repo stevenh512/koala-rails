@@ -13,4 +13,4 @@ tmtags
 .\#*
 *.swp
 *.gem
-
+.project

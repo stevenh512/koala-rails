@@ -8,4 +8,3 @@ module Koala # :nodoc:
     end
   end
 end
-

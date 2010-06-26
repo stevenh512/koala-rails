@@ -9,4 +9,3 @@ group :development do
   gem "shoe", "~> 0.6.2"
 #  gem "rspec", "~> 2.0.0.beta.12"
 end
-

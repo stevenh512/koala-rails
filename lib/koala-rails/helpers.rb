@@ -18,4 +18,3 @@ module KoalaRails # :nodoc:
     end
   end
 end
-

@@ -36,4 +36,3 @@ Gem::Specification.new do |s|
                     "--main" << "README.rdoc" <<
                     "--inline-source" << "--line-numbers"
 end
-
