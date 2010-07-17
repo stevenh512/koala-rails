@@ -2,7 +2,7 @@
 module KoalaRails # :nodoc:
   module Helpers # :nodoc:
     def facebook_session # :nodoc:
-      @facebook_session ||= Koala::Facebook::OAuth.new.get_user_from_cookie(cookies)
+      @facebook_session ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
     end
 
     def facebook_token # :nodoc:
