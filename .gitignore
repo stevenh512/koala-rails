@@ -1,6 +1,6 @@
 coverage
 rdoc
-doc
+docs
 .yardoc
 pkg
 .bundle
