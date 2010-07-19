@@ -1,6 +1,6 @@
 = koala-rails
 
-Installer and helpers for using {Koala}[http://github.com/arsduo/koala] with {Rails 3}[http;//github.com/rails/rails]
+Installer and helpers for using {Koala}[http://github.com/arsduo/koala] with {Rails 3}[http://github.com/rails/rails]
 
 == Installation
 
