@@ -1,21 +1,17 @@
-koala-rails
-===========
+= koala-rails
 
-Installer and helpers for using [Koala](http://github.com/arsduo/koala) with [Rails 3](http://github.com/rails/rails)
+Installer and helpers for using {Koala}[http://github.com/arsduo/koala] with {Rails 3}[http;//github.com/rails/rails]
 
-Installation
-------------
+== Installation
 
 In your Gemfile
-
-    gem "koala-rails"
+  gem "koala-rails"
 
 From the command line
+  bundle install
+  rails g koala:install
 
-    bundle install
-    rails g koala:install
-
-Edit `config/facebook.yml` to reflect your Facebook application's ID and secret.
+Edit config/facebook.yml to reflect your Facebook application's ID and secret.
 
 == Using the Helpers
 
