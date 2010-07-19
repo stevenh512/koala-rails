@@ -17,13 +17,11 @@ From the command line
 
 Edit `config/facebook.yml` to reflect your Facebook application's ID and secret.
 
-Using the Helpers
------------------
+== Using the Helpers
 
 (Coming soon)
 
-Note on Patches/Pull Requests
------------------------------
+== Note on Patches/Pull Requests
 
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -31,7 +29,6 @@ Note on Patches/Pull Requests
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-Copyright
----------
+== Copyright
 
 Copyright (c) 2010 Steven Hancock. See LICENSE for details.
