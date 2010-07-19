@@ -8,6 +8,7 @@ pkg
 .DS_Store
 *.tmproj
 tmtags
+tags
 *~
 \#*
 .\#*
