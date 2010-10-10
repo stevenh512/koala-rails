@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "koala-rails"
 
   # If you have other dependencies, add them here
-  s.add_dependency("koala", "~> 0.8.0")
-  
+  s.add_dependency("koala", "~> 0.9.0")
+
   s.add_development_dependency("bundler", "~> 1.0.0.beta.5")
   s.add_development_dependency("rake")
   s.add_development_dependency("shoe", "~> 0.6.2")
