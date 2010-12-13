@@ -15,4 +15,4 @@ tags
 *.swp
 *.gem
 .project
-Gemfile.lock
+

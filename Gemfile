@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
 source "http://rubygems.org"
 
-gemspec 'koala-rails'
+gemspec
+

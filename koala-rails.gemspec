@@ -19,12 +19,9 @@ Gem::Specification.new do |s|
   # If you have other dependencies, add them here
   s.add_dependency("koala", "~> 0.9.0")
 
-  s.add_development_dependency("bundler", "~> 1.0.0.beta.5")
+  s.add_development_dependency("bundler", "~> 1.0.7")
   s.add_development_dependency("rake")
-  s.add_development_dependency("shoe", "~> 0.6.2")
-  s.add_development_dependency("sdoc", "~> 0.2.19")
-  s.add_development_dependency("sdoc-helpers", "~> 0.1.4")
-  s.add_development_dependency("rdiscount", "~> 1.6.5")
+  s.add_development_dependency("shoe", "~> 0.7.1")
 
   # If you need to check in files that aren't .rb files, add them here
   s.files        = Dir["{lib}/**/*.rb", "{lib}/**/*.tt", "LICENSE", "README.rdoc"]
@@ -42,3 +39,4 @@ Gem::Specification.new do |s|
                     "--main" << "README.rdoc" <<
                     "--inline-source" << "--line-numbers"
 end
+
