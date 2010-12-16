@@ -1,15 +1,15 @@
 PATH
   remote: .
   specs:
-    koala-rails (0.1.6)
-      koala (~> 0.9.0)
+    koala-rails (0.1.7)
+      koala (~> 0.10.0)
 
 GEM
   remote: http://rubygems.org/
   specs:
     json (1.4.6)
-    koala (0.9.1)
-      json
+    koala (0.10.0)
+      json (>= 1.0)
     rake (0.8.7)
 
 PLATFORMS
@@ -17,6 +17,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0.7)
-  koala (~> 0.9.0)
+  koala (~> 0.10.0)
   koala-rails!
   rake (~> 0.8.7)
