@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   # If you have other dependencies, add them here
   s.add_dependency("koala", "~> 0.10.0")
 
-  s.add_development_dependency("bundler", "~> 1.0.7")
+  s.add_development_dependency("bundler", ">= 1.0.7")
   s.add_development_dependency("rake", "~> 0.8.7")
 
   # If you need to check in files that aren't .rb files, add them here
