@@ -1,17 +1,17 @@
 (function() {
-  var Facebook;
+  /*
+  Begin configuration
+  */
+  var Facebook, app_id, scopes;
+  app_id = "Koala::Config.app_id";
+  scopes = "Koala::Config.scopes".split(",");
+  /*
+  End configuration
+  */
   window.Facebook = Facebook = {
-    /*
-    	Begin configuration
-    	*/
-    app_id: "Facebook::APP_ID",
-    scopes: "Facebook::SCOPES",
-    /*
-    	End configuration
-    	*/
     channel: "" + document.location.protocol + "//" + document.location.host + "/channel.html",
     redirectLogin: function() {
-      return top.location.href = "https://www.facebook.com/dialog/oauth?client_id=" + Facebook.app_id + "&redirect_uri=" + (escape(top.location)) + "&scope=" + (Facebook.scopes.join(","));
+      return top.location.href = "https://www.facebook.com/dialog/oauth?client_id=" + app_id + "&redirect_uri=" + (escape(top.location)) + "&scope=" + (scopes.join(","));
     },
     fbLogin: function() {
       /*
@@ -26,7 +26,7 @@
         if (data["installed"] !== 1) {
           Facebook.login();
         }
-        return Facebook.scopes.every(function(scope) {
+        return scopes.every(function(scope) {
           if (data[scope] !== 1) {
             Facebook.login();
           }

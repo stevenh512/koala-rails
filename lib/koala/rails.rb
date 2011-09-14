@@ -1,5 +1,5 @@
-require "koala"
-require "koala/rails/version"
+require 'koala'
+require 'koala/rails/version'
 
 module Koala
   module Rails
@@ -14,8 +14,8 @@ module Koala
           def initialize_with_default_settings(*args)
             case args.size
               when 0, 1
-                raise "application id and/or secret are not specified in the config" unless Facebook::APP_ID && Facebook::SECRET
-                initialize_without_default_settings(Facebook::APP_ID.to_s, Facebook::SECRET.to_s, args.first)
+                raise "application id and/or secret are not specified in the config" unless Koala::Config.app_id && Koala::Config.secret
+                initialize_without_default_settings(Koala::Config.app_id, Koala::Config.secret, args.first)
               when 2, 3
                 initialize_without_default_settings(*args)
             end
@@ -30,9 +30,4 @@ module Koala
       end
     end
   end
-end
-
-module Facebook
-  include Koala::Rails::Config
-  include Koala::Facebook
 end

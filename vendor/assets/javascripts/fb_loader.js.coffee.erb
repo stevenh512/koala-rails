@@ -1,16 +1,16 @@
+###
+Begin configuration
+###
+app_id = "<%= Koala::Config.app_id %>"
+scopes = "<%= Koala::Config.scopes %>".split(",")
+###
+End configuration
+###
 window.Facebook = Facebook = {
-	###
-	Begin configuration
-	###
-	app_id: "<%= Facebook::APP_ID %>"
-	scopes: "<%= Facebook::SCOPES %>"
-	###
-	End configuration
-	###
 	channel: "#{document.location.protocol}//#{document.location.host}/channel.html"
 	
 	redirectLogin: ->
-		top.location.href = "https://www.facebook.com/dialog/oauth?client_id=#{Facebook.app_id}&redirect_uri=#{escape(top.location)}&scope=#{Facebook.scopes.join ","}"
+		top.location.href = "https://www.facebook.com/dialog/oauth?client_id=#{app_id}&redirect_uri=#{escape(top.location)}&scope=#{scopes.join ","}"
 	
 	fbLogin: ->
 		###
@@ -23,7 +23,7 @@ window.Facebook = Facebook = {
 		FB.api '/me/permissions', (response) ->
 			data = response.data[0]
 			Facebook.login() unless data["installed"] == 1
-			Facebook.scopes.every (scope) ->
+			scopes.every (scope) ->
 				Facebook.login() unless data[scope] == 1
 				true
 	auth: (response) ->

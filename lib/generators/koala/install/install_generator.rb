@@ -4,7 +4,7 @@ require 'generators/koala'
 module Koala # :nodoc:
   module Generators # :nodoc:
     
-    class InstallGenerator < Rails::Generators::Base # :nodoc:
+    class InstallGenerator < ::Rails::Generators::Base # :nodoc:
       extend TemplatePath
 
       def copy_config_file # :nodoc:

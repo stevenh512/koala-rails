@@ -5,7 +5,7 @@ module Koala # :nodoc:
   module Rails # :nodoc:
     module Helpers # :nodoc:
       extend ActiveSupport::Concern
-      #include ActionController::Helpers
+
       included do
         helper_method :facebook_session
         helper_method :facebook_token
@@ -13,7 +13,6 @@ module Koala # :nodoc:
       end
       
       module InstanceMethods
-        #extend ActionController::Helpers
         def facebook_session # :nodoc:
           @facebook_session ||= Koala::Facebook::OAuth.new.get_user_info_from_cookie(cookies)
         end
