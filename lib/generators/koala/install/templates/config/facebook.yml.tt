@@ -1,9 +1,13 @@
-development:
+--- 
+development: 
   app_id: YOUR APP ID
   secret: YOUR SECRET
-test:
+  scopes: YOUR_SCOPES
+test: 
   app_id: YOUR APP ID
   secret: YOUR SECRET
-production:
+  scopes: YOUR_SCOPES
+production: 
   app_id: YOUR APP ID
   secret: YOUR SECRET
+  scopes: YOUR_SCOPES

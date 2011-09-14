@@ -1,0 +1,58 @@
+window.Facebook = Facebook = {
+	###
+	Begin configuration
+	###
+	app_id: "<%= Facebook::APP_ID %>"
+	scopes: "<%= Facebook::SCOPES %>"
+	###
+	End configuration
+	###
+	channel: "#{document.location.protocol}//#{document.location.host}/channel.html"
+	
+	redirectLogin: ->
+		top.location.href = "https://www.facebook.com/dialog/oauth?client_id=#{Facebook.app_id}&redirect_uri=#{escape(top.location)}&scope=#{Facebook.scopes.join ","}"
+	
+	fbLogin: ->
+		###
+		TODO: Implement login using FB.login()
+		###
+	
+	login: Facebook.redirectLogin
+	
+	checkPermissions: ->
+		FB.api '/me/permissions', (response) ->
+			data = response.data[0]
+			Facebook.login() unless data["installed"] == 1
+			Facebook.scopes.every (scope) ->
+				Facebook.login() unless data[scope] == 1
+				true
+	auth: (response) ->
+		if response.authResponse
+			Facebook.checkPermissions()
+			###
+			TODO: Get current user with FB.api("/me")
+			###
+		else
+			Facebook.login()
+	onReady: ->
+		FB.getLoginStatus Facebook.auth
+	asyncInit: ->
+		FB.init {
+			appId: Facebook.app_id
+			status: true
+			cookie: true
+			xfbml: true
+			oauth: true
+			channelURL: Facebook.channel
+		}
+		Facebook.onReady()
+}
+
+window.fbAsyncInit = Facebook.asyncInit
+
+$ ->
+	$('body').append '<div id="fb-root"></div>'
+	cache = $.ajaxSettings.cache
+	$.ajaxSettings.cache = true
+	$.getScript "#{document.location.protocol}//connect.facebook.net/en_US/all.js"
+	$.ajaxSettings.cache = cache

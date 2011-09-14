@@ -2,4 +2,4 @@
 source "http://rubygems.org"
 
 gemspec
-
+gem 'uglifier'
