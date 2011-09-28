@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "koala-rails"
 
   # If you have other dependencies, add them here
-  s.add_dependency("koala", "~> 1.2.0beta")
+  s.add_dependency("koala", "~> 1.2.0")
   s.add_dependency("railties", "~> 3.1")
   s.add_dependency("rack-facebook-method-fix")
 

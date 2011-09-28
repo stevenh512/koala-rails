@@ -1,4 +1,5 @@
 require 'koala'
+require 'rack-facebook-method-fix'
 require 'koala/rails/version'
 
 module Koala
@@ -14,8 +15,8 @@ module Koala
           def initialize_with_default_settings(*args)
             case args.size
               when 0, 1
-                raise "application id and/or secret are not specified in the config" unless Koala::Config.app_id && Koala::Config.secret
-                initialize_without_default_settings(Koala::Config.app_id, Koala::Config.secret, args.first)
+                raise "application id and/or secret are not specified in the config" unless Koala::Rails::Config.app_id && Koala::Rails::Config.secret
+                initialize_without_default_settings(Koala::Rails::Config.app_id, Koala::Rails::Config.secret, args.first)
               when 2, 3
                 initialize_without_default_settings(*args)
             end
@@ -27,6 +28,10 @@ module Koala
         ActiveSupport.on_load(:action_controller) do
           ActionController::Base.send(:include, Koala::Rails::Helpers)
         end
+      end
+
+      initializer "koala.include_middelware" do
+        config.app_middleware.insert_before Rack::MethodOverride, Rack::Facebook::MethodFix
       end
     end
   end
