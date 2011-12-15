@@ -5,7 +5,7 @@
 require "koala"
 
 module Facebook
-  CONFIG = YAML.load(ERB.new(File.read("#{RAILS_ROOT}/config/facebook.yml")).result)[Rails.env]
+  CONFIG = YAML.load(ERB.new(File.read("#{Rails.root}/config/facebook.yml")).result)[Rails.env]
   APP_ID = CONFIG['app_id']
   SECRET = CONFIG['secret']
 end
